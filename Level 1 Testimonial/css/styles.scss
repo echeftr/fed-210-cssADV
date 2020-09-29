@@ -1,0 +1,57 @@
+@import "./constants";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background: $color-gray;
+  font-family: "Roboto Mono", monospace;
+  margin: 0;
+}
+.testimonial {
+  margin: 5em auto;
+  max-width: 400px;
+
+  background: $color-white;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  &__main {
+    padding: 30px;
+    height: 400px;
+    line-height: 2em;
+  }
+  & .footer {
+    height: 220px;
+    background: $color-purple-blue;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+    -moz-border-radius: 0px 0px 20px 20px;
+    -webkit-border-radius: 0px 0px 20px 20px;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+    &__image {
+      margin: -72px auto;
+      width: 9em;
+      border-radius: 200px 200px 200px 200px;
+      -moz-border-radius: 200px 200px 200px 200px;
+      -webkit-border-radius: 200px 200px 200px 200px;
+      border: 6px solid $color-white;
+    }
+    & h2 {
+      color: $color-white;
+      padding-top: 60px;
+      padding-bottom: 0;
+    }
+    &__title--sub {
+      color: $color-white;
+      opacity: 0.5;
+      text-decoration: none;
+      font-weight: 700;
+      padding-bottom: 10px;
+    }
+  }
+}
